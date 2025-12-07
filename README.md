@@ -1,4 +1,4 @@
-# Open Source Audio Multimodals: Models, Resources, Notes
+# Multimodal AI - Audio And Text To Text Modality (Resources, Notes)
 
 Collection of open-source multimodal models with audio support, focusing on models that can process audio tokens and understand them in conjunction with text prompts.
 
