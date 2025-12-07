@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:arxiv.org)",
+      "WebSearch",
+      "WebFetch(domain:mistral.ai)",
+      "WebFetch(domain:ultravox.ai)",
+      "WebFetch(domain:qwenlm.github.io)",
+      "WebFetch(domain:www.thewirechina.com)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
