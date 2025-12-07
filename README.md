@@ -1,5 +1,7 @@
 # Multimodal AI - Audio And Text To Text Modality (Resources, Notes)
 
+[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-audio--text--to--text-yellow)](https://huggingface.co/models?pipeline_tag=audio-text-to-text&sort=trending)
+
 Collection of open-source multimodal models with audio support, focusing on models that can process audio tokens and understand them in conjunction with text prompts.
 
 ## Overview
