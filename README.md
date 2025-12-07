@@ -113,12 +113,13 @@ See **[models.md](models.md)** for detailed profiles:
 | Kimi-Audio | Moonshot AI | TBD | TBD |
 | Phi-4-Multimodal | Microsoft | ~14B | MIT |
 | [Ultravox](https://ultravox.ai/) | Fixie.ai | 1B - 27B | Open Source |
+| [Step-Audio-R1](https://huggingface.co/stepfun-ai/Step-Audio-R1) | StepFun | 33B | Apache 2.0 |
 
 ## Providers
 
 See **[providers.md](providers.md)** for the full list:
 
-- **Open Source:** Mistral AI, Alibaba, Microsoft, Fixie.ai, Moonshot AI, ByteDance
+- **Open Source:** Mistral AI, Alibaba, Microsoft, Fixie.ai, Moonshot AI, ByteDance, StepFun
 - **Closed Source:** Google (Gemini), OpenAI (GPT-4o), Anthropic (Claude), Reka AI
 
 ## Benchmarks

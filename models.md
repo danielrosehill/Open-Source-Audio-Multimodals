@@ -6,111 +6,27 @@ This page highlights the most notable open-source and open-weight multimodal mod
 
 ---
 
-## Voxtral
+## Open Source Models
 
-**Developer:** Mistral AI
-**Released:** July 2025
-**Variants:** Voxtral (24B), Voxtral Mini (3B)
-**License:** Apache 2.0
-
-Mistral's frontier open-source speech understanding models. Goes beyond traditional ASR by incorporating semantic understanding and language comprehension. The Mini variant is specifically designed for local and edge deployments.
-
-**Key features:**
-- 32k token context window (up to 30 minutes of audio)
-- Native multilingual support with automatic language detection
-- Built-in Q&A and summarization without separate models
-- Direct function-calling triggered by spoken intent
-- Retains text understanding from language model backbone
-
-**Links:**
-- [Website](https://mistral.ai/news/voxtral)
-- [Hugging Face](https://huggingface.co/mistralai)
+| Model | Developer | Parameters | License | Profile |
+|-------|-----------|------------|---------|---------|
+| Voxtral | Mistral AI | 3B / 24B | Apache 2.0 | [Details](models/voxtral.md) |
+| Qwen2-Audio | Alibaba | 7B | Qwen License | [Details](models/qwen2-audio.md) |
+| Kimi-Audio | Moonshot AI | TBD | TBD | [Details](models/kimi-audio.md) |
+| Phi-4-Multimodal | Microsoft | ~14B | MIT | [Details](models/phi-4-multimodal.md) |
+| Ultravox | Fixie.ai | 1B - 27B | Open Source | [Details](models/ultravox.md) |
+| Step-Audio-R1 | StepFun | 33B | Apache 2.0 | [Details](models/step-audio-r1.md) |
 
 ---
 
-## Qwen2-Audio
+## Individual Model Profiles
 
-**Developer:** Alibaba (Qwen Team)
-**Parameters:** 7B
-**Variants:** Base, Instruct
-**Quantizations:** GGUF available
-
-Currently one of the most practical open-source options for local deployment. The instruct variant is specifically tuned for following transcription and analysis prompts.
-
-**Key features:**
-- Strong multilingual support
-- Prompt-guided transcription and formatting
-- GGUF quantizations enable consumer hardware deployment
-- Active community with llama.cpp support
-
-**Links:**
-- [Qwen2-Audio-7B](https://huggingface.co/Qwen/Qwen2-Audio-7B)
-- [Qwen2-Audio-7B-Instruct](https://huggingface.co/Qwen/Qwen2-Audio-7B-Instruct)
-
----
-
-## Kimi-Audio
-
-**Developer:** Moonshot AI (Kimi)
-**Architecture:** Native audio multimodal
-
-Kimi-Audio extends Moonshot AI's Kimi model family with audio modality support. Part of the growing ecosystem of Chinese AI labs producing competitive open-weight models.
-
-**Key features:**
-- Native audio understanding
-- Long-context audio processing
-- Integrated with Kimi's strong reasoning capabilities
-
-**Links:**
-- [GitHub](https://github.com/MoonshotAI/Kimi-Audio)
-- [Hugging Face](https://huggingface.co/moonshotai)
-
----
-
-## Phi-4-Multimodal-Instruct
-
-**Developer:** Microsoft
-**Parameters:** ~14B (multimodal variant)
-**Architecture:** Phi-4 base with multimodal extensions
-
-Microsoft's Phi-4 multimodal variant includes audio support, continuing the Phi series' focus on efficient, high-capability small models. Designed for instruction-following across modalities.
-
-**Key features:**
-- Efficient parameter count for capability level
-- Strong instruction-following
-- Audio + vision + text multimodal
-- MIT license for commercial use
-
-**Links:**
-- [Phi-4-multimodal-instruct](https://huggingface.co/microsoft/Phi-4-multimodal-instruct)
-
----
-
-## Ultravox
-
-**Developer:** Fixie.ai
-**Variants:** Multiple backbones (Llama 3.3, Gemma 3, Qwen 3)
-**Parameters:** 1B - 27B (depending on backbone)
-**License:** Open source
-
-A multimodal Speech LLM that understands speech directly without a separate ASR stage. Uses a multimodal projector to convert audio directly into LLM embedding space, enabling significantly faster response times than traditional ASR+LLM pipelines.
-
-**Key features:**
-- ~150ms time-to-first-token on A100 GPU
-- Multiple backbone options (Llama, Gemma, Qwen)
-- Built on Whisper Large V3 Turbo audio encoder (fine-tuned)
-- Real-time voice agent capabilities
-- Speech-to-speech translation support
-
-**Latest (v0.6):**
-- Improved Hindi language understanding
-- Better background noise and audio quality robustness
-- New Gemma 3 and Qwen 3 variants
-
-**Links:**
-- [Website](https://ultravox.ai/)
-- [GitHub](https://github.com/fixie-ai/ultravox)
-- [Hugging Face](https://huggingface.co/fixie-ai)
+- [Voxtral](models/voxtral.md) - Mistral's frontier speech understanding models
+- [Qwen2-Audio](models/qwen2-audio.md) - Practical option for local deployment with GGUF
+- [Kimi-Audio](models/kimi-audio.md) - Moonshot AI's audio multimodal
+- [Phi-4-Multimodal](models/phi-4-multimodal.md) - Microsoft's efficient multimodal
+- [Ultravox](models/ultravox.md) - Real-time voice AI optimized for low latency
+- [Step-Audio-R1](models/step-audio-r1.md) - First audio LLM with Chain-of-Thought reasoning
 
 ---
 
@@ -146,18 +62,6 @@ GPT-4o introduced native audio understanding with voice mode. The Audio Preview 
 
 ---
 
-## Model Comparison
-
-| Model | Developer | Parameters | Quantized Options | License |
-|-------|-----------|------------|-------------------|---------|
-| Voxtral | Mistral AI | 3B / 24B | TBD | Apache 2.0 |
-| Qwen2-Audio | Alibaba | 7B | GGUF | Qwen License |
-| Kimi-Audio | Moonshot AI | TBD | TBD | TBD |
-| Phi-4-Multimodal | Microsoft | ~14B | TBD | MIT |
-| Ultravox | Fixie.ai | 1B - 27B | - | Open Source |
-
----
-
 ## Selection Considerations
 
 **For local deployment on consumer hardware:**
@@ -166,10 +70,13 @@ GPT-4o introduced native audio understanding with voice mode. The Audio Preview 
 
 **For maximum capability:**
 - Voxtral (24B) for frontier performance
-- Phi-4-Multimodal-Instruct offers strong performance with reasonable resource requirements
+- Step-Audio-R1 (33B) for advanced reasoning tasks
 
 **For real-time voice agents:**
 - Ultravox optimized for low latency (~150ms TTFT)
+
+**For audio reasoning:**
+- Step-Audio-R1 with Chain-of-Thought capabilities
 
 **For Mistral ecosystem integration:**
 - Voxtral provides native compatibility with Mistral tooling
@@ -180,7 +87,6 @@ GPT-4o introduced native audio understanding with voice mode. The Audio Preview 
 
 See [ask-ai/outputs/models.md](ask-ai/outputs/models.md) for a comprehensive list including:
 - SALMONN (ByteDance)
-- Step-Audio
 - SpeechGPT
 - Audio-Flamingo
 - And more research/emerging models

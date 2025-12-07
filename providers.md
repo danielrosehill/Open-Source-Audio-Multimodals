@@ -56,6 +56,25 @@ Startup focused on real-time voice AI. Ultravox uses a multimodal projector to c
 
 TikTok's parent company. SALMONN (Speech Audio Language Music Open Neural Network) handles diverse audio types.
 
+### StepFun
+
+**Models:** Step-Audio-R1 (33B)
+**License:** Apache 2.0
+**Website:** [stepfun.com](https://www.stepfun.com/)
+
+Chinese AI company behind Step-Audio-R1, the first audio language model to successfully unlock Chain-of-Thought (CoT) reasoning. Developed the Modality-Grounded Reasoning Distillation (MGRD) framework to solve the "inverted scaling" problem in audio reasoning.
+
+**Key features:**
+- First audio LLM with working CoT reasoning
+- Surpasses Gemini 2.5 Pro on audio reasoning benchmarks
+- Covers speech, environmental sounds, and music
+- Docker deployment with vLLM support
+
+**Links:**
+- [GitHub](https://github.com/stepfun-ai/Step-Audio-R1)
+- [Hugging Face](https://huggingface.co/stepfun-ai/Step-Audio-R1)
+- [Paper](https://arxiv.org/abs/2511.15848)
+
 ---
 
 ## Closed Source / API-Only
@@ -111,7 +130,6 @@ Multimodal-first AI company. All models trained from scratch on text, code, imag
 | Fudan University | SpeechGPT | Research |
 | CMU | LTU-AS | Research |
 | Various | Audio-Flamingo | Research |
-| Step AI | Step-Audio | Emerging |
 
 ---
 
@@ -123,6 +141,7 @@ Multimodal-first AI company. All models trained from scratch on text, code, imag
 | Alibaba | Yes | Yes | Yes | Yes (GGUF) |
 | Microsoft | Yes | Yes | Yes | Yes |
 | Fixie.ai | Yes | Yes | Yes | Yes |
+| StepFun | Yes | Yes | Yes | No |
 | Google | No | Yes | Yes | No |
 | OpenAI | No | Yes | Yes | No |
 | Reka AI | No | Yes | Yes | Yes (Edge) |
