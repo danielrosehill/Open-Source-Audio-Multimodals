@@ -1,18 +1,23 @@
 # Multimodal AI - Audio-Text-To-Text Modality (Resources, Notes)
 
-[![Hugging Face Task Page](https://img.shields.io/badge/%F0%9F%A4%97%20Task-audio--text--to--text-blue)](https://huggingface.co/tasks/audio-text-to-text)
-[![Hugging Face Models](https://img.shields.io/badge/%F0%9F%A4%97%20Models-audio--text--to--text-yellow)](https://huggingface.co/models?pipeline_tag=audio-text-to-text&sort=trending)
-[![Any-to-Any Models](https://img.shields.io/badge/%F0%9F%A4%97%20Task-any--to--any-purple)](https://huggingface.co/models?pipeline_tag=any-to-any&sort=trending)
-
-Collection of open-source multimodal models with audio support, focusing on models that can process audio tokens and understand them in conjunction with text prompts (Hugging Face task identifier: audio-text-to-text).
+Collection of open-source multimodal models with audio support, focusing on models that can process audio tokens and understand them in conjunction with text prompts.
 
 ## Overview
 
-This repository catalogs and analyzes a relatively small but significant subclassification of multimodal models: those with native audio support. 
+This repository catalogs and analyzes a relatively small but significant subclassification of multimodal models: those with native audio support.  Audio in addition to audio and text to text. another category of models which are potentially in scope include any-to-any: these are models which, as the name suggests, are built to handle any input and output pairing.
 
 As of December 7, 2025, these models are classified on Hugging Face under the "multimodal" category rather than the "audio" category—an interesting distinction that reflects their fundamentally different architecture from traditional ASR models.
 
 While the primary focus is **open-source models**, closed-source providers are included for completeness given the relatively small size of this emerging field.
+
+## Hugging Face Task Classification Mapping
+
+The focus of this resource list maps to these two tasks in Hugging Face's (current) classification system for AI tasks:
+
+| Task | Description | Links |
+|------|-------------|-------|
+| **audio-text-to-text** | Models that accept audio + text input and produce text output | [![Task](https://img.shields.io/badge/%F0%9F%A4%97%20Task-audio--text--to--text-blue)](https://huggingface.co/tasks/audio-text-to-text) [![Models](https://img.shields.io/badge/%F0%9F%A4%97%20Models-audio--text--to--text-yellow)](https://huggingface.co/models?pipeline_tag=audio-text-to-text&sort=trending) |
+| **any-to-any** | Omni-modal models handling any input/output pairing (subsumes audio) | [![Task](https://img.shields.io/badge/%F0%9F%A4%97%20Task-any--to--any-purple)](https://huggingface.co/tasks/any-to-any) [![Models](https://img.shields.io/badge/%F0%9F%A4%97%20Models-any--to--any-blueviolet)](https://huggingface.co/models?pipeline_tag=any-to-any&sort=trending) |
 
 ---
 
@@ -110,15 +115,23 @@ Audio multimodal enables: `Single API call with system prompt → Formatted outp
 
 See **[models/](models/)** for detailed profiles:
 
+### Any-to-Any (Omni-Modal)
+
 | Model | Developer | Parameters | License |
 |-------|-----------|------------|---------|
-| [Voxtral](models/voxtral.md) | Mistral AI | 3B / 24B | Apache 2.0 |
-| [Qwen2-Audio](models/qwen2-audio.md) | Alibaba | 7B | Qwen License |
-| [Kimi-Audio](models/kimi-audio.md) | Moonshot AI | TBD | TBD |
-| [Phi-4-Multimodal](models/phi-4-multimodal.md) | Microsoft | ~14B | MIT |
-| [Ultravox](models/ultravox.md) | Fixie.ai | 1B - 27B | Open Source |
-| [Step-Audio-R1](models/step-audio-r1.md) | StepFun | 33B | Apache 2.0 |
-| [Soundwave](models/soundwave.md) | FreedomIntelligence | 9B | Apache 2.0 |
+| [Qwen Omni](models/any-to-any/qwen-omni.md) | Alibaba | 7B-35B | Apache 2.0 |
+
+### Audio-Text-to-Text
+
+| Model | Developer | Parameters | License |
+|-------|-----------|------------|---------|
+| [Voxtral](models/audio-multimodal/voxtral.md) | Mistral AI | 3B / 24B | Apache 2.0 |
+| [Qwen2-Audio](models/audio-multimodal/qwen2-audio.md) | Alibaba | 7B | Apache 2.0 |
+| [Kimi-Audio](models/audio-multimodal/kimi-audio.md) | Moonshot AI | 10B | MIT/Apache 2.0 |
+| [Phi-4-Multimodal](models/audio-multimodal/phi-4-multimodal.md) | Microsoft | 5.6B | MIT |
+| [Ultravox](models/audio-multimodal/ultravox.md) | Fixie.ai | 8B-70B | MIT |
+| [Step-Audio-R1](models/audio-multimodal/step-audio-r1.md) | StepFun | 33B | Apache 2.0 |
+| [Soundwave](models/audio-multimodal/soundwave.md) | FreedomIntelligence | 9B | Apache 2.0 |
 
 ## Providers
 
