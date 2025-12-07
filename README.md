@@ -107,16 +107,17 @@ Audio multimodal enables: `Single API call with system prompt → Formatted outp
 
 ## Featured Models
 
-See **[models.md](models.md)** for detailed profiles:
+See **[models/](models/)** for detailed profiles:
 
 | Model | Developer | Parameters | License |
 |-------|-----------|------------|---------|
-| Voxtral | Mistral AI | 3B / 24B | Apache 2.0 |
-| Qwen2-Audio | Alibaba | 7B | Qwen License |
-| Kimi-Audio | Moonshot AI | TBD | TBD |
-| Phi-4-Multimodal | Microsoft | ~14B | MIT |
-| [Ultravox](https://ultravox.ai/) | Fixie.ai | 1B - 27B | Open Source |
-| [Step-Audio-R1](https://huggingface.co/stepfun-ai/Step-Audio-R1) | StepFun | 33B | Apache 2.0 |
+| [Voxtral](models/voxtral.md) | Mistral AI | 3B / 24B | Apache 2.0 |
+| [Qwen2-Audio](models/qwen2-audio.md) | Alibaba | 7B | Qwen License |
+| [Kimi-Audio](models/kimi-audio.md) | Moonshot AI | TBD | TBD |
+| [Phi-4-Multimodal](models/phi-4-multimodal.md) | Microsoft | ~14B | MIT |
+| [Ultravox](models/ultravox.md) | Fixie.ai | 1B - 27B | Open Source |
+| [Step-Audio-R1](models/step-audio-r1.md) | StepFun | 33B | Apache 2.0 |
+| [Soundwave](models/soundwave.md) | FreedomIntelligence | 9B | Apache 2.0 |
 
 ## Providers
 
