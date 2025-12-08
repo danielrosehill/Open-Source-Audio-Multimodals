@@ -10,23 +10,27 @@ This page highlights the most notable open-source and open-weight multimodal mod
 
 | Model | Developer | Parameters | License | Profile |
 |-------|-----------|------------|---------|---------|
-| Voxtral | Mistral AI | 3B / 24B | Apache 2.0 | [Details](models/voxtral.md) |
-| Qwen2-Audio | Alibaba | 7B | Qwen License | [Details](models/qwen2-audio.md) |
-| Kimi-Audio | Moonshot AI | TBD | TBD | [Details](models/kimi-audio.md) |
-| Phi-4-Multimodal | Microsoft | ~14B | MIT | [Details](models/phi-4-multimodal.md) |
-| Ultravox | Fixie.ai | 1B - 27B | Open Source | [Details](models/ultravox.md) |
-| Step-Audio-R1 | StepFun | 33B | Apache 2.0 | [Details](models/step-audio-r1.md) |
+| Voxtral | Mistral AI | 3B / 24B | Apache 2.0 | [Details](models/audio-multimodal/voxtral.md) |
+| Qwen2-Audio | Alibaba | 7B | Qwen License | [Details](models/audio-multimodal/qwen2-audio.md) |
+| Kimi-Audio | Moonshot AI | TBD | TBD | [Details](models/audio-multimodal/kimi-audio.md) |
+| Phi-4-Multimodal | Microsoft | ~14B | MIT | [Details](models/audio-multimodal/phi-4-multimodal.md) |
+| Ultravox | Fixie.ai | 1B - 27B | Open Source | [Details](models/audio-multimodal/ultravox.md) |
+| Step-Audio-R1 | StepFun | 33B | Apache 2.0 | [Details](models/audio-multimodal/step-audio-r1.md) |
+| SALMONN | ByteDance/Tsinghua | 7B / 13B | Apache 2.0 | [Details](models/audio-multimodal/salmonn.md) |
+| BuboGPT | ByteDance | 7B / 13B | BSD 3-Clause | [Details](models/audio-multimodal/bubogpt.md) |
 
 ---
 
 ## Individual Model Profiles
 
-- [Voxtral](models/voxtral.md) - Mistral's frontier speech understanding models
-- [Qwen2-Audio](models/qwen2-audio.md) - Practical option for local deployment with GGUF
-- [Kimi-Audio](models/kimi-audio.md) - Moonshot AI's audio multimodal
-- [Phi-4-Multimodal](models/phi-4-multimodal.md) - Microsoft's efficient multimodal
-- [Ultravox](models/ultravox.md) - Real-time voice AI optimized for low latency
-- [Step-Audio-R1](models/step-audio-r1.md) - First audio LLM with Chain-of-Thought reasoning
+- [Voxtral](models/audio-multimodal/voxtral.md) - Mistral's frontier speech understanding models
+- [Qwen2-Audio](models/audio-multimodal/qwen2-audio.md) - Practical option for local deployment with GGUF
+- [Kimi-Audio](models/audio-multimodal/kimi-audio.md) - Moonshot AI's audio multimodal
+- [Phi-4-Multimodal](models/audio-multimodal/phi-4-multimodal.md) - Microsoft's efficient multimodal
+- [Ultravox](models/audio-multimodal/ultravox.md) - Real-time voice AI optimized for low latency
+- [Step-Audio-R1](models/audio-multimodal/step-audio-r1.md) - First audio LLM with Chain-of-Thought reasoning
+- [SALMONN](models/audio-multimodal/salmonn.md) - Pioneer audio multimodal from ByteDance/Tsinghua
+- [BuboGPT](models/audio-multimodal/bubogpt.md) - Audio-visual multimodal with SAM grounding
 
 ---
 
@@ -86,7 +90,6 @@ GPT-4o introduced native audio understanding with voice mode. The Audio Preview 
 ## Other Notable Models
 
 See [ask-ai/outputs/models.md](ask-ai/outputs/models.md) for a comprehensive list including:
-- SALMONN (ByteDance)
 - SpeechGPT
 - Audio-Flamingo
 - And more research/emerging models

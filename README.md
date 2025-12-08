@@ -46,7 +46,9 @@ The focus of this resource list maps to these two tasks in Hugging Face's (curre
 
 | Document | Description |
 |----------|-------------|
+| [models/index.md](models/index.md) | Complete index of all audio multimodal models |
 | [models.md](models.md) | Featured open-source audio multimodal models with detailed profiles |
+| [companies.md](companies.md) | Companies developing audio multimodal models (open source focus) |
 | [providers.md](providers.md) | Organizations developing audio multimodal (open & closed source) |
 | [benchmarks.md](benchmarks.md) | Evaluation frameworks and leaderboards |
 | [scope.md](scope.md) | Definition of what "audio multimodal" means in this context |
@@ -79,6 +81,19 @@ The [ask-ai/](ask-ai/) directory contains AI-assisted research outputs:
 | Location | Description |
 |----------|-------------|
 | [data/](data/) | Raw exports from Hugging Face API (CSV/JSON) |
+
+### Resources & Links
+
+| Document | Description |
+|----------|-------------|
+| [resource-lists.md](resource-lists.md) | Curated awesome-lists for multimodal AI |
+| [models-hf.md](models-hf.md) | GitHub repositories for audio multimodal models |
+| [papers.md](papers.md) | Research papers and academic resources |
+| [tooling.md](tooling.md) | Data pipeline and processing tools |
+| [eval-tools.md](eval-tools.md) | Evaluation frameworks and test prompts |
+| [inference-tools.md](inference-tools.md) | Tools for running inference at scale |
+| [demos-and-starters.md](demos-and-starters.md) | Example implementations and starter projects |
+| [github-tags.md](github-tags.md) | GitHub topic pages for discovery |
 
 ### Evaluations & Benchmarking
 
@@ -138,25 +153,32 @@ See **[models/](models/)** for detailed profiles:
 
 | Model | Developer | Parameters | License |
 |-------|-----------|------------|---------|
-| [Qwen Omni](models/any-to-any/qwen-omni.md) | Alibaba | 7B-35B | Apache 2.0 |
+| [Qwen Omni](models/omnimodality/qwen-omni.md) | Alibaba | 7B-35B | Apache 2.0 |
+| [Gemma 3n](models/omnimodality/gemma-3n.md) | Google | 2B-4B effective | Gemma |
+| [Macaw-LLM](models/omnimodality/macaw-llm.md) | Chenyang Lyu et al. | 7B-13B | Apache 2.0 |
 
 ### Audio-Text-to-Text
 
 | Model | Developer | Parameters | License |
 |-------|-----------|------------|---------|
-| [Voxtral](models/audio-multimodal/voxtral.md) | Mistral AI | 3B / 24B | Apache 2.0 |
-| [Qwen2-Audio](models/audio-multimodal/qwen2-audio.md) | Alibaba | 7B | Apache 2.0 |
+| [Audio Flamingo 3](models/audio-multimodal/audio-flamingo-3.md) | NVIDIA | 8B | Non-commercial |
+| [BuboGPT](models/audio-multimodal/bubogpt.md) | ByteDance | 7B-13B | BSD 3-Clause |
 | [Kimi-Audio](models/audio-multimodal/kimi-audio.md) | Moonshot AI | 10B | MIT/Apache 2.0 |
+| [OmniAudio](models/audio-multimodal/omniaudio.md) | NexaAI | 2.6B | Apache 2.0 |
 | [Phi-4-Multimodal](models/audio-multimodal/phi-4-multimodal.md) | Microsoft | 5.6B | MIT |
-| [Ultravox](models/audio-multimodal/ultravox.md) | Fixie.ai | 8B-70B | MIT |
-| [Step-Audio-R1](models/audio-multimodal/step-audio-r1.md) | StepFun | 33B | Apache 2.0 |
+| [Qwen2-Audio](models/audio-multimodal/qwen2-audio.md) | Alibaba | 8B | Apache 2.0 |
+| [SALMONN](models/audio-multimodal/salmonn.md) | ByteDance/Tsinghua | 7B-13B | Apache 2.0 |
 | [Soundwave](models/audio-multimodal/soundwave.md) | FreedomIntelligence | 9B | Apache 2.0 |
+| [Step-Audio-Chat](models/audio-multimodal/step-audio-chat.md) | StepFun | 130B | Apache 2.0 |
+| [Step-Audio-R1](models/audio-multimodal/step-audio-r1.md) | StepFun | 33B | Apache 2.0 |
+| [Ultravox](models/audio-multimodal/ultravox.md) | Fixie.ai | 8B-70B | MIT |
+| [Voxtral](models/audio-multimodal/voxtral.md) | Mistral AI | 5B-24B | Apache 2.0 |
 
 ## Providers
 
-See **[providers.md](providers.md)** for the full list:
+See **[providers.md](providers.md)** for the full list, or **[companies.md](companies.md)** for a company-to-models mapping:
 
-- **Open Source:** Mistral AI, Alibaba, Microsoft, Fixie.ai, Moonshot AI, ByteDance, StepFun
+- **Open Source:** Alibaba, ByteDance, Fixie.ai, FreedomIntelligence, Google DeepMind, Microsoft, Mistral AI, Moonshot AI, NexaAI, NVIDIA, StepFun
 - **Closed Source:** Google (Gemini), OpenAI (GPT-4o), Anthropic (Claude), Reka AI
 
 ## Benchmarks
@@ -193,4 +215,4 @@ This repository will be periodically updated as the field evolves. Given the rap
 
 ---
 
-*Created: December 7, 2025*
+*Created: December 7, 2025 | Updated: December 8, 2025*

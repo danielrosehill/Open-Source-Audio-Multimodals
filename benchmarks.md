@@ -88,7 +88,13 @@ A unified evaluation framework for large multimodal models supporting 100+ tasks
 - **Broad coverage**: 100+ tasks, 30+ supported models
 - **Audio support**: 50+ audio benchmark variants added in v0.5 (October 2025)
 - **Acceleration**: vLLM integration for faster evaluation
-- **Reproducibility**: Response caching and standardized evaluation
+- **Reproducibility**: Response caching and standardized evaluation''
+
+Also
+
+https://github.com/DabDans/AudioMarathon
+
+https://github.com/KuofengGao/ADU-Bench
 
 ### Audio Benchmarks Included
 
@@ -165,7 +171,8 @@ Live leaderboards for tracking model performance:
 
 | Leaderboard | Focus | Link |
 |-------------|-------|------|
-| **AudioBench** | Comprehensive audio LLM evaluation | [HF Leaderboard](https://huggingface.co/spaces/AudioLLMs/AudioBench-Leaderboard) |
+| **AudioBench (AudioLLMs)** | Comprehensive audio LLM evaluation | [HF Leaderboard](https://huggingface.co/spaces/AudioLLMs/AudioBench-Leaderboard) |
+| **AudioBench (MERaLiON)** | Audio understanding benchmark | [HF Leaderboard](https://huggingface.co/spaces/MERaLiON/AudioBench-Leaderboard) |
 | **Open ASR Leaderboard** | Speech recognition | [HF Leaderboard](https://huggingface.co/spaces/hf-audio/open_asr_leaderboard) |
 
 ---
